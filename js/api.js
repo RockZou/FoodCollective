@@ -40,7 +40,7 @@ function fbNews(){
 			console.log("good job facebook!");
 			console.log(data);
 			var theNum=data['data'].length-1;
-			var lastMessage=data['data'][theNum]['message'] + '  -- ' + data['data'][theNum]['from']['name'];
+			var lastMessage='"'+data['data'][theNum]['message'] +'"'+ '  -- ' + data['data'][theNum]['from']['name'];
 			console.log(lastMessage);
 //			console.log(data[theNum]['message']);
 			$("#news").html();
